@@ -20,6 +20,34 @@
                ReferencedContainer = "container:webrtcClientTutorialpoint.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DABB4EDF1EE1615B00443018"
+               BuildableName = "webrtcClientTutorialpointTests.xctest"
+               BlueprintName = "webrtcClientTutorialpointTests"
+               ReferencedContainer = "container:webrtcClientTutorialpoint.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DABB4EEA1EE1615B00443018"
+               BuildableName = "webrtcClientTutorialpointUITests.xctest"
+               BlueprintName = "webrtcClientTutorialpointUITests"
+               ReferencedContainer = "container:webrtcClientTutorialpoint.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction

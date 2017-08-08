@@ -41,5 +41,14 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+    </dict>
+    <key>NSCameraUsageDescription</key>
+    <string>Camera access is required for video chat</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Microphone access is required for audio chat</string>
 </dict>
 </plist>

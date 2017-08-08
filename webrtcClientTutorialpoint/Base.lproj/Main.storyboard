@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="FAn-zF-ZmQ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="webrtcClientTutorialpoint" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,238 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="nametextfield" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xqC-Z4-4Oj">
+                                <rect key="frame" x="133.5" y="204" width="109" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="othernametextfield" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EQ5-aE-rR1">
+                                <rect key="frame" x="116.5" y="318.5" width="143.5" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n5p-Yi-SP3">
+                                <rect key="frame" x="170" y="242" width="34" height="30"/>
+                                <state key="normal" title="login"/>
+                                <connections>
+                                    <action selector="loginButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="niI-di-IGu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ltx-s5-XgR">
+                                <rect key="frame" x="157.5" y="356.5" width="59" height="30"/>
+                                <state key="normal" title="Connect"/>
+                                <connections>
+                                    <action selector="connectButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m3I-Kh-k9X"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="send some message textfield" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rHD-nQ-Y3e">
+                                <rect key="frame" x="83" y="422" width="209.5" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6W8-Sy-86R">
+                                <rect key="frame" x="137" y="471" width="100" height="30"/>
+                                <state key="normal" title="send Message"/>
+                                <connections>
+                                    <action selector="sendMsgButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tac-TX-uTg"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6W8-Sy-86R" firstAttribute="top" secondItem="rHD-nQ-Y3e" secondAttribute="bottom" constant="19" id="2LD-wX-Asj"/>
+                            <constraint firstItem="Ltx-s5-XgR" firstAttribute="top" secondItem="EQ5-aE-rR1" secondAttribute="bottom" constant="8" id="39R-HG-udf"/>
+                            <constraint firstItem="xqC-Z4-4Oj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3L7-FR-x6L"/>
+                            <constraint firstItem="rHD-nQ-Y3e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Z9-b7-tkm"/>
+                            <constraint firstItem="EQ5-aE-rR1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9s2-IO-1js"/>
+                            <constraint firstItem="EQ5-aE-rR1" firstAttribute="top" secondItem="n5p-Yi-SP3" secondAttribute="bottom" constant="46.5" id="L5Q-CY-vdt"/>
+                            <constraint firstItem="n5p-Yi-SP3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UiJ-9a-7To"/>
+                            <constraint firstItem="Ltx-s5-XgR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XUf-mv-hTU"/>
+                            <constraint firstItem="6W8-Sy-86R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YKd-jV-MGb"/>
+                            <constraint firstItem="n5p-Yi-SP3" firstAttribute="top" secondItem="xqC-Z4-4Oj" secondAttribute="bottom" constant="8" id="byN-0d-NLS"/>
+                            <constraint firstItem="rHD-nQ-Y3e" firstAttribute="top" secondItem="Ltx-s5-XgR" secondAttribute="bottom" constant="35.5" id="uXi-w6-ak9"/>
+                            <constraint firstItem="EQ5-aE-rR1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vWh-sV-f5I"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="msgTextField" destination="rHD-nQ-Y3e" id="ez7-aa-mcf"/>
+                        <outlet property="nameTextField" destination="xqC-Z4-4Oj" id="coH-aq-pX9"/>
+                        <outlet property="otherNameTextField" destination="EQ5-aE-rR1" id="PlF-wf-Qgo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+        <!--Video View Controller-->
+        <scene sceneID="Mfd-vY-8RL">
+            <objects>
+                <viewController id="FAn-zF-ZmQ" customClass="RTCVideoViewController" customModule="webrtcClientTutorialpoint" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZUS-CM-egL"/>
+                        <viewControllerLayoutGuide type="bottom" id="jTd-r6-HR9"/>
+                    </layoutGuides>
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="YFO-iT-X1F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xlu-Nu-I2Z">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ap0-4F-lMx">
+                                        <rect key="frame" x="0.0" y="587" width="375" height="80"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="otherusername" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="07K-Iq-6gx">
+                                                <rect key="frame" x="36" y="25" width="119.5" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgT-7J-2oB">
+                                                <rect key="frame" x="171.5" y="25" width="30" height="30"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="call">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="callButtonAction:" destination="FAn-zF-ZmQ" eventType="touchUpInside" id="muh-L5-OJ6"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="pgT-7J-2oB" firstAttribute="centerY" secondItem="ap0-4F-lMx" secondAttribute="centerY" id="3iH-xR-lo5"/>
+                                            <constraint firstItem="07K-Iq-6gx" firstAttribute="centerY" secondItem="ap0-4F-lMx" secondAttribute="centerY" id="MIz-t9-v65"/>
+                                            <constraint firstItem="pgT-7J-2oB" firstAttribute="leading" secondItem="07K-Iq-6gx" secondAttribute="trailing" constant="16" id="PUq-yQ-Hkf"/>
+                                            <constraint firstAttribute="height" constant="80" id="eSy-sd-zf2"/>
+                                            <constraint firstItem="07K-Iq-6gx" firstAttribute="leading" secondItem="ap0-4F-lMx" secondAttribute="leading" constant="36" id="xnJ-6Z-3gx"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="0IR-Kt-6RC" userLabel="Remote View" customClass="RTCEAGLVideoView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="582"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Tce-6F-H46" userLabel="Local View" customClass="RTCEAGLVideoView">
+                                        <rect key="frame" x="227" y="442" width="120" height="120"/>
+                                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="IHf-Eu-ZRR"/>
+                                            <constraint firstAttribute="width" constant="120" id="sbS-og-K3C"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YKu-HC-wUF" userLabel="Button Container View">
+                                        <rect key="frame" x="20" y="254" width="40" height="160"/>
+                                        <subviews>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="30h-74-xAL" userLabel="Audio Button">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="audio">
+                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="audioButtonAction:" destination="FAn-zF-ZmQ" eventType="touchUpInside" id="i0R-NY-eCd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKo-N2-dqG" userLabel="Video Button">
+                                                <rect key="frame" x="0.0" y="60" width="40" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="video">
+                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="videoButtonAction:" destination="FAn-zF-ZmQ" eventType="touchUpInside" id="hEb-au-rY8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MiI-34-QuB" userLabel="Hangup Button">
+                                                <rect key="frame" x="0.0" y="120" width="40" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="hangup">
+                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="hangUpButtonAction:" destination="FAn-zF-ZmQ" eventType="touchUpInside" id="zcj-j1-Sgt"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="x3Z-qT-Dge"/>
+                                            <constraint firstAttribute="height" constant="160" id="xHw-9P-gi4"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="YKu-HC-wUF" firstAttribute="leading" secondItem="xlu-Nu-I2Z" secondAttribute="leading" constant="20" id="1Kc-Zr-PPM"/>
+                                    <constraint firstItem="ap0-4F-lMx" firstAttribute="leading" secondItem="xlu-Nu-I2Z" secondAttribute="leading" id="BWk-GK-LH5"/>
+                                    <constraint firstItem="0IR-Kt-6RC" firstAttribute="top" secondItem="xlu-Nu-I2Z" secondAttribute="top" id="HcG-a4-cSd"/>
+                                    <constraint firstAttribute="trailing" secondItem="ap0-4F-lMx" secondAttribute="trailing" id="Pwb-lC-sZ1"/>
+                                    <constraint firstAttribute="bottom" secondItem="ap0-4F-lMx" secondAttribute="bottom" id="Yt4-ov-Cv2"/>
+                                    <constraint firstItem="0IR-Kt-6RC" firstAttribute="leading" secondItem="xlu-Nu-I2Z" secondAttribute="leading" id="hfn-yG-k3d"/>
+                                    <constraint firstItem="Tce-6F-H46" firstAttribute="bottom" secondItem="0IR-Kt-6RC" secondAttribute="bottom" constant="-20" id="jyB-Jy-ctd"/>
+                                    <constraint firstAttribute="trailing" secondItem="0IR-Kt-6RC" secondAttribute="trailing" id="lJ9-BY-VeY"/>
+                                    <constraint firstAttribute="centerY" secondItem="YKu-HC-wUF" secondAttribute="centerY" id="rg1-8Y-DXF"/>
+                                    <constraint firstItem="ap0-4F-lMx" firstAttribute="top" secondItem="0IR-Kt-6RC" secondAttribute="bottom" constant="5" id="rtm-4D-9j1"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tce-6F-H46" secondAttribute="trailing" constant="28" id="x5X-ns-pVw"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Otv-6C-SmP">
+                                <rect key="frame" x="0.0" y="41" width="375" height="300"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfa-FC-tmf">
+                                        <rect key="frame" x="168" y="196" width="38" height="30"/>
+                                        <state key="normal" title="Login"/>
+                                        <connections>
+                                            <action selector="loginButtonAction:" destination="FAn-zF-ZmQ" eventType="touchUpInside" id="rJ2-rp-RKU"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="nametextfield" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4xi-PS-Pvd">
+                                        <rect key="frame" x="133" y="134.5" width="109" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="4AB-9m-Gmy"/>
+                                    <constraint firstItem="jfa-FC-tmf" firstAttribute="top" secondItem="4xi-PS-Pvd" secondAttribute="bottom" constant="31.5" id="SUP-DB-STf"/>
+                                    <constraint firstItem="4xi-PS-Pvd" firstAttribute="centerY" secondItem="Otv-6C-SmP" secondAttribute="centerY" id="UQb-sg-YVn"/>
+                                    <constraint firstAttribute="width" constant="375" id="btf-Ii-Ke3"/>
+                                    <constraint firstItem="jfa-FC-tmf" firstAttribute="centerX" secondItem="Otv-6C-SmP" secondAttribute="centerX" id="rCV-rD-glP"/>
+                                    <constraint firstItem="4xi-PS-Pvd" firstAttribute="centerX" secondItem="Otv-6C-SmP" secondAttribute="centerX" id="yQf-px-WI4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xlu-Nu-I2Z" secondAttribute="trailing" id="4Ds-qO-DRA"/>
+                            <constraint firstItem="Otv-6C-SmP" firstAttribute="top" secondItem="ZUS-CM-egL" secondAttribute="bottom" constant="21" id="59M-wf-8LT"/>
+                            <constraint firstItem="xlu-Nu-I2Z" firstAttribute="leading" secondItem="YFO-iT-X1F" secondAttribute="leading" id="8h4-c3-YdO"/>
+                            <constraint firstItem="Otv-6C-SmP" firstAttribute="centerX" secondItem="YFO-iT-X1F" secondAttribute="centerX" id="RWT-Ue-fBN"/>
+                            <constraint firstItem="xlu-Nu-I2Z" firstAttribute="top" secondItem="YFO-iT-X1F" secondAttribute="top" id="SKw-Xe-yUh"/>
+                            <constraint firstItem="jTd-r6-HR9" firstAttribute="top" secondItem="xlu-Nu-I2Z" secondAttribute="bottom" id="Yfp-e5-JGa"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="localVideoView" destination="Tce-6F-H46" id="dO4-Eg-rmi"/>
+                        <outlet property="loginView" destination="Otv-6C-SmP" id="Uvf-Vd-Ifh"/>
+                        <outlet property="nameTextField" destination="4xi-PS-Pvd" id="uKS-lc-4WI"/>
+                        <outlet property="otherUserName" destination="07K-Iq-6gx" id="VUK-00-NDR"/>
+                        <outlet property="remoteVideoView" destination="0IR-Kt-6RC" id="bfL-VC-hrM"/>
+                        <outlet property="videoView" destination="xlu-Nu-I2Z" id="f9G-Yp-FxU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="chP-6J-lrv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="806"/>
         </scene>
     </scenes>
 </document>
