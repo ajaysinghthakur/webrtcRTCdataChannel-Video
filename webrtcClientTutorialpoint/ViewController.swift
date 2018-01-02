@@ -72,7 +72,7 @@ class ViewController: UIViewController {
     //button action
     @IBAction func loginButtonAction(_ sender: Any) {
         
-        if (nameTextField.text?.characters.count)! > 0 {
+        if (nameTextField.text?.count)! > 0 {
         
             let dict = ["type": "login",
                          "name": nameTextField.text!]

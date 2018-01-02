@@ -9,29 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "webrtcClientTutorialpoint/RTCVideoViewController.swift"
-            timestampString = "518789402.61609"
+            filePath = "webrtcClientTutorialpoint/ViewController.swift"
+            timestampString = "536580741.225954"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "425"
-            endingLineNumber = "425"
-            landmarkName = "peerConnection(_:removedStream:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "webrtcClientTutorialpoint/RTCVideoViewController.swift"
-            timestampString = "518789402.61609"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "358"
-            endingLineNumber = "358"
-            landmarkName = "caseOnLeave(_:)"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "loginButtonAction(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

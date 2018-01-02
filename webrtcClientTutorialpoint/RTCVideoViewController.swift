@@ -74,7 +74,8 @@ class RTCVideoViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         //init socket
-        self.socket = WebSocket(url: URL(string: "ws://192.168.1.47:9090")!)
+        //self.socket = WebSocket(url: URL(string: "ws://192.168.1.47:9090")!)
+        self.socket = WebSocket(url: URL(string: "ws://127.0.0.1:9090")!)
         self.socket?.delegate = self
         self.socket?.connect()
         
